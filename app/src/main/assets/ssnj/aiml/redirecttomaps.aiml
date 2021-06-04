@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+    <category><pattern>MY ADDRESS IS *</pattern>
+<template>I will remember your address is <star/>.  <think><set name="address"><star/></set></think></template>
+<category>
+    <pattern>ABCD *</pattern>
+    <template><button>
+<text>Location</text>
+<url>https://maps.google.com?q=<star/></url>
+</button></template>
+</category>
+</aiml>
